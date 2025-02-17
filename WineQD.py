@@ -45,7 +45,7 @@ plt.xlabel("Alcohol Content (%)")
 plt.ylabel("Frequency")
 plt.show()
 
-# Heatmap of correlation matrix
+# Heatmap of correlation matrix ~ Was not going to add cause of the complications but figure it out
 plt.figure(figsize=(12, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5)
 plt.title("Heatmap of Feature Correlations")
