@@ -18,13 +18,13 @@ team_rows = soup.find_all('tr', class_='team')
 data = []
 for row in team_rows[:25]:
     cols = row.find_all('td')
-    team_name = cols[0].text.strip()
-    year = cols[1].text.strip()
-    wins = cols[2].text.strip()
-    losses = cols[3].text.strip()
+    team_name = cols[0].text.strip() #Required Data
+    year = cols[1].text.strip() # Required Data
+    wins = cols[2].text.strip() # Required Data
+    losses = cols[3].text.strip() # Required Data
     data.append([team_name, year, wins, losses])
 
-# Step 5: Create a DataFrame
+# Step 5: Create a DataFrame **
 df = pd.DataFrame(data, columns=['Team Name', 'Year', 'Wins', 'Losses'])
 
 # Display the DataFrame
